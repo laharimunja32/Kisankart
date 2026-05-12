@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kisankart • Dashboard</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand brand--small">
+          <div class="brand-mark" aria-hidden="true">K</div>
+          <div class="brand-text">
+            <div class="brand-name">Kisankart</div>
+            <div class="brand-tagline">Dashboard</div>
+          </div>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="pill" id="userPill" aria-live="polite"></div>
+          <a class="secondary-btn" href="login.html?logout=1">Login page</a>
+          <button class="secondary-btn" id="logoutBtn" type="button">Sign out</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page page--dashboard">
+      <section class="panel panel--info" aria-label="About Kisankart">
+        <header class="shop-header">
+          <h1 class="page-title">All organic food — shop by category</h1>
+          <p class="muted shop-lead">
+            Fresh produce, pantry staples, dairy, snacks, and more — everything organic, from farms to your doorstep.
+          </p>
+        </header>
+
+        <div class="shop-info">
+          <p class="shop-info-lead">
+            <strong>Kisankart</strong> is your one place for <strong>all organic food</strong>: farm vegetables and fruits,
+            dals and grains, spices and oils, dairy, dry fruits, honey, juices, breakfast staples, tea &amp; coffee,
+            pickles, snacks, flowers, and more — certified organic where applicable, fairly sourced, and delivered fresh.
+          </p>
+          <ul class="info-points">
+            <li>
+              <span class="info-points-label">Direct from farms</span>
+              <span class="info-points-desc">Fewer middlemen, fair prices</span>
+            </li>
+            <li>
+              <span class="info-points-label">Organic focus</span>
+              <span class="info-points-desc">Fresh, quality-led picks</span>
+            </li>
+            <li>
+              <span class="info-points-label">Home delivery</span>
+              <span class="info-points-desc">Order by category, receive at home</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel panel--categories" aria-label="Product categories">
+        <h2 class="categories-panel-title">Browse categories</h2>
+        <p class="categories-panel-hint">Scroll inside this card to see all categories.</p>
+        <div
+          class="categories-scroll"
+          tabindex="0"
+          role="region"
+          aria-label="Scrollable category list"
+        >
+          <div class="categories-wrap">
+        <ul class="categories-grid">
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🥬</span>
+              <span class="category-name">Vegetables</span>
+              <span class="category-desc">Leafy greens, gourds, roots &amp; more</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🍎</span>
+              <span class="category-name">Fruits</span>
+              <span class="category-desc">Seasonal &amp; exotic fresh fruits</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🫘</span>
+              <span class="category-name">Dals &amp; pulses</span>
+              <span class="category-desc">Lentils, beans &amp; split grains</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🌸</span>
+              <span class="category-name">Flowers</span>
+              <span class="category-desc">Garlands, loose blooms &amp; décor</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🌾</span>
+              <span class="category-name">Grains &amp; rice</span>
+              <span class="category-desc">Rice, millets &amp; whole grains</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🌿</span>
+              <span class="category-name">Spices</span>
+              <span class="category-desc">Whole &amp; ground spices</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🥛</span>
+              <span class="category-name">Dairy</span>
+              <span class="category-desc">Milk, curd &amp; farm-fresh dairy</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🫒</span>
+              <span class="category-name">Oils &amp; ghee</span>
+              <span class="category-desc">Cold-pressed oils &amp; pure ghee</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🥜</span>
+              <span class="category-name">Dry fruits &amp; nuts</span>
+              <span class="category-desc">Almonds, raisins, cashews &amp; mixes</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🍯</span>
+              <span class="category-name">Honey &amp; sweeteners</span>
+              <span class="category-desc">Raw honey, jaggery &amp; natural sugars</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🧃</span>
+              <span class="category-name">Juices &amp; drinks</span>
+              <span class="category-desc">Cold-pressed juices &amp; organic beverages</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🥣</span>
+              <span class="category-name">Breakfast &amp; cereals</span>
+              <span class="category-desc">Muesli, oats, flakes &amp; mixes</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🫙</span>
+              <span class="category-name">Pickles &amp; preserves</span>
+              <span class="category-desc">Organic pickles, jams &amp; spreads</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">☕</span>
+              <span class="category-name">Tea &amp; coffee</span>
+              <span class="category-desc">Organic tea leaves &amp; coffee beans</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <span class="category-icon" aria-hidden="true">🍪</span>
+              <span class="category-name">Organic snacks</span>
+              <span class="category-desc">Cookies, crackers &amp; healthy bites</span>
+            </a>
+          </li>
+        </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/auth.js"></script>
+    <script src="assets/dashboard.js"></script>
+  </body>
+</html>
+
